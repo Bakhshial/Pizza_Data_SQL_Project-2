@@ -8,31 +8,31 @@ The database consists of the following tables:
 orders
 
 Stores order details including order ID, order date, and order time.
-Columns:
-order_id: INT, Primary Key
-order_date: DATE
-order_time: TIME
-order_details
+  Columns:
+    order_id: INT, Primary Key
+    order_date: DATE
+    order_time: TIME
+    order_details
 
 Stores details of each order, including the pizza ID and quantity.
-Columns:
-order_details_id: INT, Primary Key
-order_id: INT, Foreign Key
-pizza_id: TEXT
-quantity: INT
-pizza_types
+  Columns:
+    order_details_id: INT, Primary Key
+    order_id: INT, Foreign Key
+    pizza_id: TEXT
+    quantity: INT
+    pizza_types
 
 Contains information about different types of pizzas.
-Columns:
-pizza_type_id: TEXT, Primary Key
-name: TEXT
-category: TEXT
-ingredients: TEXT
-pizzas
+  Columns:
+    pizza_type_id: TEXT, Primary Key
+    name: TEXT
+    category: TEXT
+    ingredients: TEXT
+    pizzas
 
 Contains detailed information about pizzas including their size and price.
-Columns:
-pizza_id: TEXT, Primary Key
-pizza_type_id: TEXT, Foreign Key
-size: TEXT
-price: DOUBLE
+  Columns:
+    pizza_id: TEXT, Primary Key
+    pizza_type_id: TEXT, Foreign Key
+    size: TEXT
+    price: DOUBLE
